@@ -1,0 +1,296 @@
+.container {
+  height: 100vh;
+  background-color: #e1e9ec;
+  background-image: url("../../Assets/Images/remove-bg.png");
+  background-repeat: no-repeat;
+  background-position: center 4em;
+  background-size: contain;
+  position: relative;
+  padding: 0 3vw;
+}
+p#contact_number {
+  float: right;
+}
+h1 {
+  font-weight: lighter;
+  font-family: "Cormorant", serif;
+  font-size: 4.5em;
+}
+h1#main_text {
+  position: absolute;
+  line-height: 0.95em;
+  bottom: 10vh;
+}
+.video__new-collection {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+}
+.video__new-collection span {
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  background-color: #808080;
+  border: 10px solid #c8c8c8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease 500ms;
+}
+.video__new-collection span:hover {
+  transition: all ease 500ms;
+  border: 11px solid #c8c8c8;
+}
+.video__new-collection span + p {
+  margin-left: 20px;
+}
+
+#catalog {
+  font-family: "Cormorant", serif;
+  padding: 4vw;
+}
+#catalog h2 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+.nav_menu {
+  padding: 0 2.5rem;
+}
+.nav_menu span {
+  cursor: pointer;
+}
+.right-arrow {
+  margin-left: 15px;
+  font-weight: bolder;
+}
+#catalog div.nav_menu {
+  display: flex;
+  align-items: center;
+  color: #084866;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+#catalog div nav {
+  position: relative;
+  left: 40%;
+  transform: translateX(-50%);
+}
+#catalog div nav li {
+  position: relative;
+  padding: 0 30px;
+}
+#catalog div nav li svg {
+  position: absolute;
+  bottom: 0;
+}
+.items_container {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+}
+.items_card {
+  margin: 20px 2.5rem 50px;
+}
+.items_card div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #084866;
+}
+div.product_image {
+  height: 300px;
+  width: 100%;
+}
+div.product_image img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+.items_card p {
+  margin: 10px 0;
+}
+.items_card div span + span,
+p.product_rating {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+span.star_icon {
+  position: absolute;
+  transform: translateX(5px);
+}
+div.help_girls {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 5%;
+  padding: 5vw 0;
+  position: relative;
+  align-items: center;
+}
+.help_girls_image {
+  height: 400px;
+  position: relative;
+  right: -4vw;
+  width: 100%;
+}
+.help_girls_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+div.help_girls article h2 {
+  font-weight: 400;
+  font-size: 3.5rem !important;
+  font-family: "Cormorant", serif;
+  margin-bottom: 30px;
+}
+
+section#contact-form {
+  background-image: url("../../Assets/Images/pexels-godisable-jacob-1252982.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  padding: 0 4vw;
+}
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact-form form input,
+#contact-form form button {
+  outline: 0;
+  border: 0;
+  margin: 5px 0;
+  padding: 6px;
+  width: 222px;
+}
+#contact-form form h2 {
+  font-weight: 400;
+  font-size: 3.5rem;
+  font-family: "Cormorant", serif;
+  margin-bottom: 30px;
+}
+#contact-form form label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+#contact-form form label.email {
+  margin-right: 24px;
+}
+#contact-form form button {
+  background-color: #084866;
+  color: white;
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 1.15em;
+  margin-left: 70px;
+  width: 235px;
+  transition: width ease 500ms;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer {
+  background: #000;
+  color: #fff;
+  padding: 3vw 4vw;
+}
+footer ul {
+  margin: 0 0;
+}
+footer li a {
+  color: #fff;
+}
+.footer_grid {
+  display: grid;
+  grid-template-columns: 0.5fr 0.58fr 0.5fr;
+  margin: 30px 0 0;
+}
+.footer_grid p {
+  grid-area: 1/2/1/3;
+  line-height: 2rem;
+}
+p.phone_number {
+  grid-area: 1/3/1/3;
+  justify-self: end;
+}
+h2.fast-en-reliable {
+  font-family: "Cormorant", serif;
+  font-size: 3.5rem;
+  font-weight: normal;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(-1);
+  margin-top: 30px;
+}
+p.fast-en-reliabled,
+p.fast-en-reliabled ~ p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+section.logistics {
+  display: grid;
+  padding: 4vw;
+  height: 70vh;
+  background: url("https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-end;
+}
+header,
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: medium;
+}
+ul li {
+  padding: 0 10px;
+  line-height: 1.3em;
+}
+div.logo {
+  float: left;
+}
+li a {
+  transition: scale ease-in-out 1000ms;
+}
+li a:hover {
+  color: #084866;
+  font-weight: bold;
+  transform: scale(1.01);
+  transform-origin: left;
+  transition: scale ease-in-out 1000ms;
+}
+.mobile_menu {
+  display: none;
+}

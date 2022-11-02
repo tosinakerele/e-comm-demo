@@ -1,0 +1,223 @@
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  p#contact_number {
+    position: absolute;
+    top: 5vw;
+    right: 4vw;
+  }
+  .container {
+    background-position: center 11em;
+    background-size: contain;
+    transition: all ease 800ms;
+  }
+  h1#main_text {
+    font-size: 2em;
+    line-height: 1.5rem;
+    top: 165px;
+    bottom: unset;
+    transition: all ease 800ms;
+  }
+  .video__new-collection span {
+    height: 20px;
+    width: 20px;
+    padding: 1px;
+    border: 8px solid #c8c8c8;
+    transition: all ease 800ms;
+  }
+  .video__new-collection span svg {
+    height: 15px;
+    width: 15px;
+  }
+  .video__new-collection span + p {
+    margin-left: 10px;
+    font-size: 13px;
+  }
+
+  .items_container {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+  .items_card {
+    margin: 20px 0.5rem 20px;
+  }
+  .items_card p {
+    margin: 2px 0;
+  }
+  div.product_image {
+    height: 250px;
+    width: 100%;
+  }
+  .nav_menu {
+    padding: 0;
+  }
+  #catalog {
+    padding-bottom: 0;
+    overflow-x: hidden;
+  }
+  #catalog div.nav_menu {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+  #catalog div.nav_menu nav li:first-child {
+    padding-left: 0;
+  }
+  #catalog div.nav_menu nav {
+    width: 100%;
+    position: relative;
+    left: 0%;
+    transform: translateX(-0%);
+  }
+  #catalog div.nav_menu nav ul {
+    padding: 0;
+  }
+  #catalog h2 {
+    font-size: 2.3rem;
+  }
+  div.help_girls {
+    display: block;
+    padding-bottom: 0;
+  }
+  div.help_girls article h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 15px;
+  }
+  .help_girls_image {
+    height: 400px;
+    position: relative;
+    left: -4vw;
+    width: 109.1%;
+    margin-top: 30px;
+  }
+  section#contact-form {
+    display: block;
+    background-position: 50% 10%;
+    padding: 30vw 4vw;
+    height: unset;
+  }
+  #contact-form form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+  #contact-form form button {
+    margin-left: 0;
+    width: 100%;
+    background-repeat: 3px;
+    transition: all ease 500ms;
+  }
+  #contact-form form div {
+    display: flex;
+    align-items: center;
+  }
+
+  #contact-form form h2 {
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    font-family: "Cormorant", serif;
+    margin-bottom: 30px;
+  }
+   footer {
+    display: block;
+    transition: all 0.8ms ease;
+  }
+  .footer {
+    position: relative;
+    padding: 15vw 4vw;
+  }
+  .footer div.footer_grid p + p {
+    position: absolute;
+    top: 15vw;
+    right: 4vw;
+    line-height: normal;
+  }
+  div.footer_grid {
+    display: block;
+    transition: all 0.8ms ease;
+  }
+  footer nav ul {
+    display: block;
+    padding: 0;
+    transition: all 0.8ms ease;
+  }
+  footer nav ul li {
+    padding: 3px 0;
+    line-height: 1.5rem;
+    transition: all 0.8ms ease;
+  }
+  footer nav + nav ul {
+    transition: all 0.8ms ease;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+  }
+  footer nav + nav ul li {
+    margin: 0 5px;
+  }
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 0.5fr 0.58fr 0.5fr;
+    margin: 20px 0 0;
+  }
+  footer nav + nav ul li:last-child {
+    margin-right: 0;
+  }
+  footer nav + nav {
+    position: absolute;
+    right: 4vw;
+    top: calc(15vw + 30px + 18.5px);
+  }
+  div.logo {
+    transition: all 0.8ms ease;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .footer_grid p {
+    line-height: 1.5rem;
+  }
+  section.logistics {
+    display: block;
+    padding: 20vw 4vw;
+    height: unset;
+    background-size: cover;
+    background-position: center;
+  }
+  section.logistics div {
+    background: #f3f3f3;
+    padding: 10vw 4vw;
+    filter: blur(0);
+    border-radius: 5px;
+  }
+  h2.fast-en-reliable {
+    font-size: 2.5rem;
+  }
+    .mobile_menu {
+  display: block;
+}
+  header {
+    display: block;
+    padding: 5vw 0;
+  }
+  header nav ul {
+    display: block;
+    padding: 0;
+  }
+  header nav:last-of-type ul {
+    display: flex;
+    /* justify-content: end; */
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    right: 4vw;
+    top: calc(5vw + 6.7%);
+  }
+  header nav:last-of-type ul li {
+    padding: 0 3px;
+    transition: all ease 800ms;
+  }
+  header div.logo + nav,
+  .close {
+    display: none;
+  }
+}
+
