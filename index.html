@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Commerce Shop</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>E-Commerce Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="stylesheet" href="/Assets/CSS/main.css" />
     <link rel="stylesheet" href="/Assets/CSS/reset.css" />
@@ -27,59 +34,67 @@
       <div class="container">
         <!-- <NavBar /> -->
         <header>
-      <div class="logo">
-        <h4>LOGO</h4>
-      </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">catalog</a>
-          </li>
-          <li>
-            <a href="#">delivery</a>
-          </li>
-          <li>
-            <a href="#">last chance to buy</a>
-          </li>
-          <li>
-            <a href="#">address</a>
-          </li>
-        </ul>
-      </nav>
+          <div class="logo">
+            <h4>LOGO</h4>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">catalog</a>
+              </li>
+              <li>
+                <a href="#">delivery</a>
+              </li>
+              <li>
+                <a href="#">last chance to buy</a>
+              </li>
+              <li>
+                <a href="#">address</a>
+              </li>
+            </ul>
+          </nav>
 
-      <nav class="mobile_menu">
-        <span class={!open ? "close" : "open"} onClick={handleToggle}>
-          <i class="fa-regular fa-xmark"></i>
-        </span>
-        <span class={!open ? "open" : "close"} onClick={handleToggle}>
-          
-        <i class="fa-regular fa-bars"></i>
-        </span>
-      </nav>
+          <nav class="mobile_menu" id="mobile_menu">
+            <span class="active" onClick="handleToggle()" id="close_btn">
+              <img class="icon" src="./Assets/Icons/bars-solid.svg" alt="" />
+            </span>
+            <span class="inactive" onClick="handleToggle()" id="open_btn">
+              <img class="icon" src="./Assets/Icons/xmark-solid.svg" />
+            </span>
+          </nav>
 
-      <nav>
-        <ul>
-          <li>
-            <a href="#">
-              
-              <i class="fa-light fa-heart"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              
-              <i class="fa-regular fa-bag-shopping"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              
-              <i class="fa-light fa-magnifying-glass"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="./Assets/Icons/heart-solid.svg"
+                    alt=""
+                    class="icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./Assets/Icons/bag-shopping-solid.svg"
+                    alt=""
+                    class="icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./Assets/Icons/magnifying-glass-solid.svg"
+                    alt=""
+                    class="icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
         <p id="contact_number">0809 984 6538</p>
         <div class="video__new-collection">
           <span>
@@ -140,7 +155,6 @@
         </div>
         <div class="help_girls">
           <article>
-            
             <h2>we help girls find their own style</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea rerum
@@ -165,142 +179,144 @@
       </section>
       <!-- <Logistics /> -->
       <section class="logistics">
-      <div>
-        <p class="fast-en-reliabled">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-          doloribus aut iusto laboriosam provident quis excepturi similique
-          esse, ab nisi!
-        </p>
-        <br />
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-        <br />
-        <p>
-          adipisicing elit. Nesciunt expedita pariatur facere vel quae provident
-          alias fuga ipsum
-        </p>
-        <h2 class="fast-en-reliable">fast and reliable delivery</h2>
-      </div>
-    </section>
-      <!-- <Catalog /> -->
-       <section id="catalog">
-      <h2>catalog</h2>
-      <div class="nav_menu">
-        <div class="nav_arrows">
-          <span class="left-arrow">&larr;</span>
-          <span class="right-arrow">&rarr;</span>
+        <div>
+          <p class="fast-en-reliabled">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur doloribus aut iusto laboriosam provident quis excepturi
+            similique esse, ab nisi!
+          </p>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur</p>
+          <br />
+          <p>
+            adipisicing elit. Nesciunt expedita pariatur facere vel quae
+            provident alias fuga ipsum
+          </p>
+          <h2 class="fast-en-reliable">fast and reliable delivery</h2>
         </div>
-        <nav>
-          <ul>
-            <li>
-              material <i class="fa-regular fa-angle-down"></i>
-            </li>
-            <li>
-              price <i class="fa-regular fa-angle-down"></i>
-            </li>
-            <li>
-              rating <i class="fa-regular fa-angle-down"></i>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="items_container">
-        {StoreData.map((product, id) => {
-          return (
-            <div class="items_card" key={id}>
-              <div class="product_image">
-                <img src={product.image} alt={product.name} />
-              </div>
-              <p class="product-rating">
-                <span>{product.rating}</span>
-                <span class="star_icon">
-                  <FaStar color="#eebc25" />
-                </span>
-              </p>
-              <p>{product.item_name} </p>
-              <div>
-                <span class="price-tag">$ {product.price}</span>
-                <span>
-                  <span>
-                    <BsHandbag size={18} />
-                  </span>
-                  <span>
-                    <CiHeart size={18} />
-                  </span>
-                </span>
-              </div>
+      </section>
+      <!-- <Catalog /> -->
+      <section id="catalog">
+        <h2>catalog</h2>
+        <div class="nav_menu">
+          <div class="nav_arrows">
+            <span class="left-arrow">&larr;</span>
+            <span class="right-arrow">&rarr;</span>
+          </div>
+          <nav>
+            <ul>
+              <li>material <i class="fa-regular fa-angle-down"></i></li>
+              <li>price <i class="fa-regular fa-angle-down"></i></li>
+              <li>rating <i class="fa-regular fa-angle-down"></i></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="items_container">
+          {StoreData.map((product, id) => { return (
+          <div class="items_card" key="{id}">
+            <div class="product_image">
+              <img src="{product.image}" alt="{product.name}" />
             </div>
-          );
-        })}
-      </div>
-    </section>
+            <p class="product-rating">
+              <span>{product.rating}</span>
+              <span class="star_icon">
+                <FaStar color="#eebc25" />
+              </span>
+            </p>
+            <p>{product.item_name}</p>
+            <div>
+              <span class="price-tag">$ {product.price}</span>
+              <span>
+                <span>
+                  <BsHandbag size="{18}" />
+                </span>
+                <span>
+                  <CiHeart size="{18}" />
+                </span>
+              </span>
+            </div>
+          </div>
+          ); })}
+        </div>
+      </section>
       <!-- <ContactForm /> -->
       <section id="contact-form">
-      <form>
-        <h2>Fill out the form and we will select a dress for you</h2>
-        <div>
-          <label>Name</label>
-          <input type="text" />
-        </div>
-        <div>
-          <label class="email">Email</label>
-          <input type="email" />
-        </div>
+        <form>
+          <h2>Fill out the form and we will select a dress for you</h2>
+          <div>
+            <label>Name</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label class="email">Email</label>
+            <input type="email" />
+          </div>
 
-        <button type="submit">contact me</button>
-      </form>
-    </section>
+          <button type="submit">contact me</button>
+        </form>
+      </section>
       <!-- <footer /> -->
       <div class="footer">
-      <footer>
-        <div class="logo">LOGO</div>
-        <nav>
-          <ul>
-            <li>
-              <a href="#">catalog</a>
-            </li>
-            <li>
-              <a href="#">delivery</a>
-            </li>
-            <li>
-              <a href="#">last chance to buy</a>
-            </li>
-            <li>
-              <a href="#">address</a>
-            </li>
-          </ul>
-        </nav>
+        <footer>
+          <div class="logo">LOGO</div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">catalog</a>
+              </li>
+              <li>
+                <a href="#">delivery</a>
+              </li>
+              <li>
+                <a href="#">last chance to buy</a>
+              </li>
+              <li>
+                <a href="#">address</a>
+              </li>
+            </ul>
+          </nav>
 
-        <nav>
-          <ul>
-            <li>
-              <a href="#">
-                
-                <i class="fa-light fa-heart"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                
-                <i class="fa-regular fa-bag-shopping"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                
-                <i class="fa-light fa-magnifying-glass"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </footer>
-      <div class="footer_grid">
-        <p style="color: #ffffff80" >
-          2004-2021 &copy; Mondi-online fashion store for women's clothing. All
-          rights reserved. Worldwide delivery.
-        </p>
-        <p class="phone_number">0809 984 6538</p>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="./Assets/Icons/heart-solid.svg"
+                    alt=""
+                    class="icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./Assets/Icons/bag-shopping-solid.svg"
+                    alt=""
+                    class="icon"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="./Assets/Icons/magnifying-glass-solid.svg"
+                    alt=""
+                    class="icon"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </footer>
+        <div class="footer_grid">
+          <p style="color: #ffffff80">
+            2004-2021 &copy; Mondi-online fashion store for women's clothing.
+            All rights reserved. Worldwide delivery.
+          </p>
+          <p class="phone_number">0809 984 6538</p>
+        </div>
       </div>
-    </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>

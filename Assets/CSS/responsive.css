@@ -117,7 +117,7 @@
     font-family: "Cormorant", serif;
     margin-bottom: 30px;
   }
-   footer {
+  footer {
     display: block;
     transition: all 0.8ms ease;
   }
@@ -191,9 +191,9 @@
   h2.fast-en-reliable {
     font-size: 2.5rem;
   }
-    .mobile_menu {
-  display: block;
-}
+  .mobile_menu {
+    display: block;
+  }
   header {
     display: block;
     padding: 5vw 0;
@@ -204,12 +204,11 @@
   }
   header nav:last-of-type ul {
     display: flex;
-    /* justify-content: end; */
     align-items: center;
     padding: 0;
     position: absolute;
     right: 4vw;
-    top: calc(5vw + 6.7%);
+    top: 70px;
   }
   header nav:last-of-type ul li {
     padding: 0 3px;
@@ -219,5 +218,10 @@
   .close {
     display: none;
   }
+  .mobile_menu .inactive {
+    display: none;
+  }
+  .mobile_menu .active {
+    display: block;
+  }
 }
-
